@@ -83,7 +83,7 @@ html,body{
     font-weight: 600;
 }
 
-.task-add :focus{
+.thold :focus{
     outline: none;
     transition-behavior:smooth ;
     transition-duration: 0.5s;
@@ -97,7 +97,7 @@ html,body{
     background-color: aquamarine;
     font-weight: 800;
     border: none;
-    outline: none;
+    outline: n;
 }
 
 
