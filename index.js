@@ -5,6 +5,8 @@ const cors=require("cors")
 const express=require("express")
 const path=require("path")
 
+
+
 // CORS options
 const corsOptions = {
     origin: '*', // Allow only this origin
@@ -20,6 +22,7 @@ const app=express()
 app.use(cors(corsOptions))
 const template=path.join(__dirname,"index.html")
 const template2=path.join(__dirname,"aboutus.html")
+
 
 app.get("/",(req,res)=>{
     res.sendFile(template)

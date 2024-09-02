@@ -95,6 +95,12 @@ html,body{
     height: 30px;
     border-radius: 80px;
     background-color: aquamarine;
+    font-weight: 800;
+    
+}
+
+.add-btn :focus{
+    border: none;
 }
 
 
