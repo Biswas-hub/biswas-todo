@@ -19,10 +19,16 @@ const app=express()
 
 app.use(cors(corsOptions))
 const template=path.join(__dirname,"index.html")
+const template2=path.join(__dirname,"aboutus.html")
 
 app.get("/",(req,res)=>{
     res.sendFile(template)
 })
+
+app.get("/about",(req,res)=>{
+    res.sendFile(template2)
+})
+
 
 
 app.listen(PORT,()=>{
