@@ -96,12 +96,11 @@ html,body{
     border-radius: 80px;
     background-color: aquamarine;
     font-weight: 800;
-    
-}
-
-.add-btn :focus{
+    border: none;
     outline: none;
 }
+
+
 
 
 
