@@ -150,14 +150,19 @@ ul li{
     margin: auto;
     border-radius: 50%;
     
+    
 }
 
 .task-1{
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 2px;
+    
 
     
+}
+
+.todo-text,.delete-btn{
+    margin-left: 10px;
 }
 
