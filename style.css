@@ -142,7 +142,7 @@ ul li{
 }
 
 .check-icon{
-    position: absolute;
+    position: relative;
     width: 25px;
     height: 25px;
     background-color: azure;
@@ -152,9 +152,12 @@ ul li{
     
 }
 
-.list{
-    display: flex;
-    justify-content: space-evenly;
+.task-1{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+
     
 }
 
