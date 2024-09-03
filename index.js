@@ -22,12 +22,12 @@ const app=express()
 app.use(cors(corsOptions))
 const template=path.join(__dirname,"index.html")
 const template2=path.join(__dirname,"aboutus.html")
-const style=path.join(__dirname,"style.css")
+
 
 
 app.get("/",(req,res)=>{
     res.sendFile(template)
-    res.sendFile(style)
+    
 })
 
 app.get("/about",(req,res)=>{
