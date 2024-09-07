@@ -23,6 +23,7 @@ html,body{
     margin-top: 50px;
     border-radius: 30px;
     box-shadow: 0,10px,15px,rgba(0, 255, 242, 0.5);
+    margin-bottom: 30px;
 }
 
 .logo{
@@ -77,7 +78,7 @@ html,body{
     border-radius: 50px;
     border: none;
     width: 300px;
-    height: 30px;
+    height: 50px;
     color: white;
     text-indent: 10px;
     font-weight: 600;
@@ -90,9 +91,18 @@ html,body{
     box-shadow: 10px 10px 900px 20px aqua;
 }
 
+.task-add input:focus{
+    transition-duration: .5s;
+    transition-behavior: ease;
+    width: 350px;
+    border: white;
+}
+
+
+
 .add-btn{
     width: 70px;
-    height: 30px;
+    height: 50px;
     border-radius: 80px;
     background-color: aquamarine;
     font-weight: 800;
@@ -121,16 +131,19 @@ html,body{
 
 
 .listoftask{
-    width: 80%;
-    height: 100px;
+    max-width: 80%;
+    height: 60px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    background-color: aqua;
+    background-color: rgb(73, 73, 73);
     margin-left: auto;
     margin-right: auto;
-    border:none;
+    border-radius: 30px;
+    margin-top: 20px;
+    
+    
 }
 
 
@@ -163,13 +176,19 @@ ul li{
     
 }
 
-.todo-text,.delete-btn{
-    margin-left: 10px;
+.todo-text{
+    margin-left: 30px;
+    color: white;
+    margin-right: 30px;
+    font-weight: 600;
 }
 
 
 .delete-btn{
     background-color: transparent;
     border: none;
+    color: rgb(136, 136, 136);
 }
+
+
 
