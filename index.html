@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -25,8 +26,8 @@
 
     <section class="addtask" id="add-task">
         <div class="task-add" id="taskadd">
-            <form action="#">
-                <input type="text" name="taskin" id="task-in" placeholder="Write your Task Here" class="thold">
+            <form>
+                <input type="text" name="taskin" id="task-in" placeholder="Write your Task Here" class="thold" autocomplete="off">
                 <button class="add-btn" id="btn-add">Add</button>
             </form>
         </div>
@@ -34,8 +35,8 @@
 
     <section class="listoftask" id="task-list">
         <div class="list-task" id="lst-task">
-            <ul class="list">
-                <li class="task-1" id="task1">
+            <ul class="list" id="to-do">
+                <!-- <li class="task-1" id="task1">
                     <input type="checkbox" name="done" id="todo-1" class="cb">
                     <label for="todo-1" class="check-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
@@ -48,12 +49,26 @@
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
                     </button>
                 </li>
+
+                <li class="task-2" id="task1">
+                    <input type="checkbox" name="done" id="todo-2" class="cb">
+                    <label for="todo-1" class="check-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                    </label>
+                    <label for="todo-3" class="todo-text">
+                        Develop a Ecomerce Webiste
+                    </label>
+                    
+                    <button class="delete-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                    </button>
+                </li> -->
             </ul>
         </div>
     </section>
   
     
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>

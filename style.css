@@ -129,17 +129,24 @@ html,body{
 
 /*list of task*/
 
-
 .listoftask{
-    max-width: 80%;
-    height: 60px;
+    width: 100%;
+    height: fit-content;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
+    background-color: antiquewhite;
+    
+}
+
+li{
+    width: 90%;
+    height: 60px;
+    
+    
     background-color: rgb(73, 73, 73);
-    margin-left: auto;
-    margin-right: auto;
+    
     border-radius: 30px;
     margin-top: 20px;
     
