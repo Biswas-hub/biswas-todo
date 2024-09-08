@@ -50,10 +50,25 @@ function createtodo(value,key){
             </button>
 
     `
+    
 
     
 
     return todoli;
+}
+
+const delbtn=document.querySelector(".delete-btn")
+
+    delbtn.addEventListener("click",()=>{
+        deletetodos(key);
+    })
+
+function deletetodos(key){
+    todoarr=todoarr.filter((_,i)=> i !== key);
+    savetodos();
+    updatetodoli();
+
+
 }
 
 
