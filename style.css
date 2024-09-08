@@ -237,3 +237,38 @@ ul li{
 
 
 
+
+@media screen and (min-width: 720px) {
+    
+    .logo-bar{
+        width: 30%;
+    }
+
+    .task-1{
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        
+        
+    }
+    
+
+    .task-add input{
+        width: 480px;
+    }
+    .task-add input:focus{
+        transition: 0.5s ease;
+        width: 520px;
+
+    }
+
+
+    
+
+
+
+}

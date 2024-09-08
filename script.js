@@ -3,18 +3,21 @@ const todoin=document.getElementById('task-in');
 const todoliul=document.getElementById('to-do');
 const addbtn=document.getElementById('btn-add');
 
-let todoarr=[];
+
+let todoarr=gettodos();
+updatetodoli()
 
 fm.addEventListener('submit',function(e){
-    
     e.preventDefault();
     addtodo();
 });
+
 
 function addtodo(){
     const todoval=todoin.value;
     todoarr.push(todoval);
     updatetodoli();
+    savetodos();
     todoin.value="";
     
     
@@ -48,7 +51,21 @@ function createtodo(value,key){
 
     `
 
+    
+
     return todoli;
+}
+
+
+function savetodos(){
+    todosjson=JSON.stringify(todoarr);
+    localStorage.setItem("todos",todosjson);
+}
+
+function gettodos(){
+    
+    const todos=localStorage.getItem("todos") || "[]";
+    return JSON.parse(todos);
 }
 
 
